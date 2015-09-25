@@ -1,0 +1,37 @@
+---
+layout: default
+---
+{% assign docs = site.collections[page.collection].docs | sort: url %}
+{% assign coltitle = site.collections[page.collection].permalink | remove: '/' | split:':' %}
+{% for doc in docs %}
+  {% if doc.url == page.url %}
+    {% assign docidx = forloop.index0 %}
+    {% assign docprev = forloop.index0 | minus:1 %}
+    {% assign docnext = forloop.index0 | plus:1 %}
+		<aside>
+		<h1 class="text-center">{{ coltitle[0] | upcase }}</h1>
+		<ul class="list-inline">
+    {% if forloop.first == false %}
+		<li><a href="{{ docs[docprev].url }}" title="{{ docs[docprev].title }}">anterior</a></li>
+    {% endif %}
+
+    {% if forloop.last == false %}
+		<li class="pull-right"><a href="{{ docs[docnext].url }}" title="{{ docs[docnext].title }}">siguiente</a></li>
+    {% endif %}
+		</ul>
+		</aside>
+  {% endif %}
+{% endfor %}
+
+
+<div class="collection-item">
+
+  <header class="collection-item-header">
+    <h1 class="collection-item-title">{{ page.title }}</h1>
+  </header>
+
+  <article class="collection-item-content">
+    {{ content }}
+  </article>
+
+</div>
