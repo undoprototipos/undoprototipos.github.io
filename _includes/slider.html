@@ -1,0 +1,13 @@
+<div class="flexslider">
+  <ul class="slides">
+		{% for slide in site.slides %}
+		<li>
+			<img src="{{ slide.image | prepend: "/slides/media/" }}" alt="{{ slide.title }}" />
+			<div class="flex-caption">
+				<h3>{{ slide.title }}</h3>
+				<p>{{ slide.description }}</p>
+			</div>
+		</li>
+		{% endfor %}
+  </ul>
+</div>

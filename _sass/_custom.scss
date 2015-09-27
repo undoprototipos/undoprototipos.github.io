@@ -1,11 +1,71 @@
 body {
-	margin-top: 4em;
-	//font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;                                            
+	margin-top: 50px;
 	font-family: 'Open Sans',Arial,sans-serif;                                            
+}
+
+aside.jumbotron {
+	text-align: center;
 }
 
 article.excerpt {
 	h1 {
 		height: 3em;
+	}
+}
+
+/**
+ * Flexslider tweaks
+ */
+.flexslider {
+	border: none;
+}
+
+.flexslider .slides li {
+	position:relative;
+}
+
+.flex-caption {
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:10%;
+	background: rgba(#000,0.2);
+	z-index:1;
+	padding:5px;
+	text-align: center;
+	color: white;
+}
+
+.flex-direction-nav a {
+	height: 50px;
+}
+
+/**
+ * Fontawesome tweaks
+ */
+#featured {
+	text-align: center;
+	.fa {
+		font-size: 80px;
+	}
+	[class*="fa-"] {
+		-webkit-transition-duration: 1.0s;
+		-moz-transition-duration: 1.0s;
+		-o-transition-duration: 1.0s;
+		transition-duration: 1.0s;
+
+		-webkit-transition-property: -webkit-transform;
+		-moz-transition-property: -moz-transform;
+		-o-transition-property: -o-transform;
+		transition-property: transform;
+
+	}
+	[class*="fa-"]:hover {
+		color: #24a159 !important;
+		-webkit-transform:rotate(360deg);
+		-moz-transform:rotate(360deg);
+		-o-transform:rotate(360deg);
+		transform:rotate(360deg);
+
 	}
 }

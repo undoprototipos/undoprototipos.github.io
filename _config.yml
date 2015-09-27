@@ -29,6 +29,7 @@ collections:
   tecnologias:
     output: true
     permalink: /tecnologías/:path/
+  slides:
 
 defaults:
   - scope:

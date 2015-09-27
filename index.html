@@ -2,17 +2,58 @@
 layout: default
 ---
 
-<!-- Place somewhere in the <body> of your page -->
-<div class="flexslider">
-	<ul class="slides">
-		<li>
-			<img src="{{ "/media/header_img_1.jpg" | prepend: site.baseurl }}" />
-		</li>
-		<li>
-			<img src="{{ "/media/header_img_1.jpg" | prepend: site.baseurl }}" />
-		</li>
-		<li>
-			<img src="{{ "/media/header_img_1.jpg" | prepend: site.baseurl }}" />
-		</li>
-	</ul>
+{% include slider.html %}
+
+<main role="main">
+<section id="featured">
+<div class="container">
+	<div class="row">
+
+		<div class="col-md-4">
+			<i class="fa fa-rocket"></i>
+			<h3>Tecnologías</h3>
+			<p>Existen en el mercado diversas tecnologías de prototipado con las cuales obtenemos prototipos muy diferentes</p>
+		</div>
+
+
+		<div class="col-md-4">
+			<i class="fa fa-flask"></i>
+			<h3>Materiales</h3>
+			<p>Dependiendo de la tecnología de prototipado elegida, existen multitud de materiales plásticos y metálicos a elegir</p>
+		</div>
+
+		<div class="col-md-4">
+			<i class="fa fa-lightbulb-o"></i>
+			<h3>Aplicaciones</h3>
+			<p>Las piezas fabricadas mediante prototipado rápido se pueden utilizar para muchas aplicaciones </p>
+		</div>
+
+		<div class="col-md-4">
+			<i class="fa fa-wrench"></i>
+			<h3>Sectores</h3>
+			<p>Sectores de prototipado</p>
+		</div>
+
+		<div class="col-md-4">
+			<i class="fa fa-newspaper-o"></i>
+			<h3>Noticias</h3>
+			<p>Ultimas noticias sobre prototipado y trabajos realizados</p>
+		</div>
+
+		<div class="col-md-4">
+			<i class="fa fa-print"></i>
+			<h3>Impresoras 3D</h3>
+		</div>
+
+	</div>
 </div>
+</section>
+</main>
+
+<aside class="jumbotron">
+	<header>
+		<h1>Todo en Prototipos y servicios de prototipado en Undo Prototipos S.L.</h1>
+	</header>
+
+		<p>Undo Prototipos cuenta con un equipo humano que tiene una amplia experiencia de más de 15 años en la fabricación de prototipos rápidos en diferentes tecnologías. Disponemos de instalaciones propias de fabricación con las ultimas tecnologías y sistemas presentes en el mercado. Lo que nos distingue de nuestros competidores, es la calidad en la ejecución y los cortos plazos de entrega. Las piezas prototipo o series cortas se pueden utilizar en sectores y aplicaciones tan variadas como aeronáutica, automoción, diseño, medicina, industria, arquitectura, etc. Cada aplicación requiere un prototipado de diferentes características, acabados o materiales. Asesoramos a nuestros clientes con las mejores soluciones para su proyecto.</p>
+</aside>
