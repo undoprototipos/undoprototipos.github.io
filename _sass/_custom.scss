@@ -51,6 +51,9 @@ article.excerpt {
  */
 #featured {
 	text-align: center;
+  p {
+    min-height: 13em;
+  }
 	.fa {
 		font-size: 80px;
 	}
@@ -75,6 +78,7 @@ article.excerpt {
 
 	}
 }
+
 .social-media-list {
 	.fa {
 		font-size: 2em;
