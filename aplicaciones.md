@@ -10,7 +10,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <div class="row">
 {% for doc in site.aplicaciones %}
 <div class="col-md-3">
-{% include collection-excerpt.html %}
+{% include collection-excerpt.html col="aplicaciones" %}
 </div>
 {% endfor %}
 </div>

@@ -1,6 +1,6 @@
 <article class="excerpt">
 <a href="{{ doc.url | prepend: baseurl }}">
-	<img src="{{ doc.banner | prepend: '/media/' }}" alt="{{ doc.title }}" class="img-responsive">
+	<img src="/{{ include.col }}/media/{{ doc.banner }}" alt="{{ doc.title }}" class="img-responsive">
 	<h1 class="h5">{{ doc.title }}</h1>
 </a>
 </article>

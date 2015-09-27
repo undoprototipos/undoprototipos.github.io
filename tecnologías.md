@@ -9,8 +9,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <div class="container">
 <div class="row">
 {% for doc in site.tecnologias %}
-<div class="col-md-3">
-{% include collection-excerpt.html %}
+<div class="col-md-4">
+{% include collection-excerpt.html col='tecnologias' %}
 </div>
 {% endfor %}
 </div>
