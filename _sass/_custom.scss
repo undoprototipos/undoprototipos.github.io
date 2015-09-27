@@ -3,6 +3,16 @@ body {
 	font-family: 'Open Sans',Arial,sans-serif;                                            
 }
 
+#mainNav {
+  overflow: hidden;
+  .navbar-brand {
+    padding: 0;
+  }
+  .site-logo {
+    max-height: 50px;
+  }
+}
+
 aside.jumbotron {
 	text-align: center;
 	margin-bottom: 0;
