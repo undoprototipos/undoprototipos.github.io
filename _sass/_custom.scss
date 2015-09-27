@@ -5,6 +5,12 @@ body {
 
 aside.jumbotron {
 	text-align: center;
+	margin-bottom: 0;
+}
+
+footer.site-footer {
+	background-color: #333;
+	color: white;
 }
 
 article.excerpt {
@@ -61,11 +67,16 @@ article.excerpt {
 
 	}
 	[class*="fa-"]:hover {
-		color: #24a159 !important;
+		color: #184682 !important;
 		-webkit-transform:rotate(360deg);
 		-moz-transform:rotate(360deg);
 		-o-transform:rotate(360deg);
 		transform:rotate(360deg);
 
+	}
+}
+.social-media-list {
+	.fa {
+		font-size: 2em;
 	}
 }
