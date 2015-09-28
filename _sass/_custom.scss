@@ -1,3 +1,10 @@
+a,
+a:hover,
+a:active,
+a:focus {
+	outline: 0;
+}
+
 body {
 	margin-top: 50px;
 	font-family: 'Open Sans',Arial,sans-serif;                                            
@@ -54,6 +61,12 @@ article.excerpt {
 
 .flex-direction-nav a {
 	height: 50px;
+}
+.flex-direction-nav .flex-prev {
+	left: 0px;
+}
+.flex-direction-nav .flex-next {
+	right: 0px;
 }
 
 /**
