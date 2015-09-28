@@ -74,8 +74,11 @@ article.excerpt {
  */
 #featured {
 	text-align: center;
+	[class*="col-"] {
+		margin-bottom: 3em;
+	}
   p {
-    min-height: 13em;
+    min-height: 6em;
   }
 	.fa {
 		font-size: 80px;
